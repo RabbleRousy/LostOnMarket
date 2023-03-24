@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 470737105}
   - component: {fileID: 470737104}
   - component: {fileID: 470737103}
+  - component: {fileID: 470737107}
   m_Layer: 0
   m_Name: Trader
   m_TagString: Untagged
@@ -154,7 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eabd2f8115866f42836fda64b341dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  traderData: {fileID: 11400000, guid: 37a4b81fdca217c40afc01e943dc6ad0, type: 2}
 --- !u!114 &470737104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +252,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470737107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470737102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb094b6b2debef049b1cee8563838076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traders:
+  - {fileID: 11400000, guid: 37a4b81fdca217c40afc01e943dc6ad0, type: 2}
+  trader: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
