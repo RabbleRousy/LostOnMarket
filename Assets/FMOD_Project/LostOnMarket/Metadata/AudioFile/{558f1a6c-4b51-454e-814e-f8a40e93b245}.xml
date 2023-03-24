@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{558f1a6c-4b51-454e-814e-f8a40e93b245}">
+		<property name="assetPath">
+			<value>alien_sounds_lost_in_translations.wav-020.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.66122448979591841</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcb21e53-f438-4ec2-b01b-c40e617e0700}</destination>
+		</relationship>
+	</object>
+</objects>
