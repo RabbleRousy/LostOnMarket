@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 604543448}
   - component: {fileID: 604543447}
   - component: {fileID: 604543452}
+  - component: {fileID: 604543453}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -417,6 +418,25 @@ MonoBehaviour:
   m_DefaultActionMap: Default
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &604543453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604543446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984bb59f1dae54ed793a2321b202ac83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInventory:
+  - name: Scrap Metal
+    requiredAmount: 2
+    currentAmount: 0
+  - name: Icecream
+    requiredAmount: 5
+    currentAmount: 0
 --- !u!1 &956221895
 GameObject:
   m_ObjectHideFlags: 0
