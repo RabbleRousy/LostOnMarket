@@ -18,7 +18,7 @@ public class PlaySound : MonoBehaviour
 
     private void Start()
     {
-        traderData = GetComponent<SelectTrader>().trader;
+        traderData = GetComponent<Trader>().data;
         _emitter.EventReference = traderData.gibberishSound;
         InvokeRepeating("Play",interval,interval);
     }
