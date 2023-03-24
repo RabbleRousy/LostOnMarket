@@ -7,4 +7,5 @@ public class TraderData : ScriptableObject
     public bool isSpeakingGibberish = true;
     public EventReference gibberishSound;
     public EventReference translatedSound;
+    public string itemForSale;
 }
