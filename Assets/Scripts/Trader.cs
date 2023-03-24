@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class Trader : MonoBehaviour
 {
-    [SerializeField] private TraderData[] traders;
+    [SerializeField] private string traderDataFolder;
 
     public TraderData data;
     
@@ -11,18 +13,25 @@ public class Trader : MonoBehaviour
 
     private void Awake()
     {
-        if (_traderIndices == null)
-        {
-            _traderIndices = new List<int>();
-            for (int i = 0; i < traders.Length; i++)
-            {
-                _traderIndices.Add(i);
-            }
-        }
-        
-        int index = Random.Range(0, _traderIndices.Count);
-        _traderIndices.Remove(index);
+        var availableTraderData = GetAllInstancesInFolder<TraderData>(traderDataFolder).ToList();
 
-        data = traders[index];
+        int index = Random.Range(0, availableTraderData.Count);
+
+        data = availableTraderData[index];
+        availableTraderData.RemoveAt(index);
+    }
+    
+    public static T[] GetAllInstancesInFolder<T>(string folderPath) where T : ScriptableObject
+    {
+        string[] guids = AssetDatabase.FindAssets("t:"+ typeof(T).Name, new[] { folderPath }); 
+        T[] a = new T[guids.Length];
+        for(int i =0;i<guids.Length;i++)         //probably could get optimized 
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guids[i]);
+            a[i] = AssetDatabase.LoadAssetAtPath<T>(path);
+        }
+ 
+        return a;
+ 
     }
 }

@@ -558,11 +558,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 933330477}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4973665d70e5a4ad4a7d88f5d7ed7b5a, type: 3}
+  m_Script: {fileID: 11500000, guid: cb094b6b2debef049b1cee8563838076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  traderDataFolder: Assets/Trader
   data: {fileID: 0}
-  itemForSale: 
 --- !u!1 &956221895
 GameObject:
   m_ObjectHideFlags: 0
