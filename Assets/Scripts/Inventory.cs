@@ -7,6 +7,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private List<ItemObject> currentInventory;
+    private Collider2D collider;
 
     public void Collect(string itemName)
     {
@@ -33,5 +34,20 @@ public class Inventory : MonoBehaviour
         
         // Check passed for all required items
         return true;
+    }
+
+    public void OnInteract()
+    {
+        Collider2D[] traderCollider = new Collider2D[1];
+        if (collider.OverlapCollider(new ContactFilter2D()
+            {
+                layerMask =  LayerMask.GetMask("Trader")
+            }, traderCollider) != 0)
+        {
+            // TODO: Do other stuff
+            
+            
+            Collect(traderCollider[0].GetComponent<Trader>().data.itemForSale);
+        }
     }
 }
