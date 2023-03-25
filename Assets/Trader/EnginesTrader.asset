@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gibberishSound:
     Guid:
-      Data1: 1777043383
-      Data2: 1334819665
-      Data3: 555616661
-      Data4: -1809703699
-    Path: event:/heavy_alien
-  translatedSound:
-    Guid:
       Data1: -1709499477
       Data2: 1164926062
       Data3: -836003909
       Data4: 808450882
     Path: event:/light_alien
+  translatedSound:
+    Guid:
+      Data1: -45223403
+      Data2: 1106185385
+      Data3: 467944321
+      Data4: 1742322921
+    Path: event:/Translated_Engine
   itemForSale: Engines

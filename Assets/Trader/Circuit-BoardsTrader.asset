@@ -21,9 +21,9 @@ MonoBehaviour:
     Path: event:/heavy_alien
   translatedSound:
     Guid:
-      Data1: -1709499477
-      Data2: 1164926062
-      Data3: -836003909
-      Data4: 808450882
-    Path: event:/light_alien
+      Data1: -1803617151
+      Data2: 1080114880
+      Data3: -1404796767
+      Data4: -2130178267
+    Path: event:/Translated_Circuit
   itemForSale: Circuit Boards

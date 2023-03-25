@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gibberishSound:
     Guid:
-      Data1: 1777043383
-      Data2: 1334819665
-      Data3: 555616661
-      Data4: -1809703699
-    Path: event:/heavy_alien
-  translatedSound:
-    Guid:
       Data1: -1709499477
       Data2: 1164926062
       Data3: -836003909
       Data4: 808450882
     Path: event:/light_alien
+  translatedSound:
+    Guid:
+      Data1: -1935370515
+      Data2: 1168253820
+      Data3: 1548252570
+      Data4: 8747257
+    Path: event:/Translated_lubricants
   itemForSale: Lubricants

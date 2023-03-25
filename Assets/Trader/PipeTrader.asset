@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gibberishSound:
     Guid:
-      Data1: 1777043383
-      Data2: 1334819665
-      Data3: 555616661
-      Data4: -1809703699
-    Path: event:/heavy_alien
+      Data1: -1077821021
+      Data2: 1146871843
+      Data3: 955729075
+      Data4: 1858673174
+    Path: event:/dolphin_alien
   translatedSound:
     Guid:
-      Data1: -1709499477
-      Data2: 1164926062
-      Data3: -836003909
-      Data4: 808450882
-    Path: event:/light_alien
+      Data1: 2065601752
+      Data2: 1088760532
+      Data3: 554059424
+      Data4: 765713427
+    Path: event:/Translated_Pipes
   itemForSale: Piepes

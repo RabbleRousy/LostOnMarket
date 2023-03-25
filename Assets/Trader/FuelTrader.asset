@@ -21,9 +21,9 @@ MonoBehaviour:
     Path: event:/heavy_alien
   translatedSound:
     Guid:
-      Data1: -1709499477
-      Data2: 1164926062
-      Data3: -836003909
-      Data4: 808450882
-    Path: event:/light_alien
+      Data1: -1159810342
+      Data2: 1219181488
+      Data3: -244230736
+      Data4: 855607714
+    Path: event:/Translated_Fuel
   itemForSale: Fuel Cells
