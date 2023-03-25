@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
     public Trader currentTrader = null;
 
     [SerializeField] private Toggle[] shoppingListItems;
+    [SerializeField] private TextMeshProUGUI notificationText;
 
     private void Awake()
     {
@@ -66,7 +67,16 @@ public class Inventory : MonoBehaviour
             currentInventory.Add(new ItemObject(itemName, 0, 1));
         }
 
+        StartCoroutine(ShowNotification(itemName));
         CheckShoppingList();
+    }
+
+    private IEnumerator ShowNotification(string itemName)
+    {
+        notificationText.gameObject.SetActive(true);
+        notificationText.text = "JUHU! I collected \"" + itemName + "\"!";
+        yield return new WaitForSeconds(3f);
+        notificationText.gameObject.SetActive(false);
     }
 
     public bool CheckShoppingList()
@@ -90,7 +100,7 @@ public class Inventory : MonoBehaviour
         }
         
         // Check passed for all required items
-        return true;
+        return check;
     }
 
     public void OnInteract()
@@ -99,6 +109,9 @@ public class Inventory : MonoBehaviour
         
         // TODO: Do other stuff
         Collect(currentTrader.data.itemForSale);
+        currentTrader.itemCollected = true;
+        currentTrader.E.SetActive(false);
+        currentTrader = null;
     }
     
     private static T[] GetAllInstancesInFolder<T>(string folderPath) where T : ScriptableObject
