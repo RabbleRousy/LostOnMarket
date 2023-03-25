@@ -90,7 +90,7 @@ public class Inventory : MonoBehaviour
         }
         
         // Check passed for all required items
-        return true;
+        return check;
     }
 
     public void OnInteract()
@@ -99,6 +99,9 @@ public class Inventory : MonoBehaviour
         
         // TODO: Do other stuff
         Collect(currentTrader.data.itemForSale);
+        currentTrader.itemCollected = true;
+        currentTrader.E.SetActive(false);
+        currentTrader = null;
     }
     
     private static T[] GetAllInstancesInFolder<T>(string folderPath) where T : ScriptableObject

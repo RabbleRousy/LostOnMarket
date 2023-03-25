@@ -7,9 +7,10 @@ using Random = UnityEngine.Random;
 
 public class Trader : MonoBehaviour
 {
-    [SerializeField] private GameObject E;
+    public GameObject E;
 
     public TraderData data;
+    public bool itemCollected;
 
     private void Start()
     {
@@ -20,7 +21,7 @@ public class Trader : MonoBehaviour
     {
         if (!col.CompareTag("Player")) return;
 
-        if (data.IsSpeakingGibberish) return;
+        if (data.IsSpeakingGibberish || itemCollected) return;
         
         E.SetActive(true);
         col.GetComponent<Inventory>().currentTrader = this;
@@ -28,7 +29,7 @@ public class Trader : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (!col.CompareTag("Player")) return;
+        if (!col.CompareTag("Player") || itemCollected) return;
 
         E.SetActive(false);
         col.GetComponent<Inventory>().currentTrader = null;
