@@ -15,7 +15,7 @@ public class AnimatorState : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        _animator.SetFloat("velocityX",_rb.velocity.x);
+        _animator.SetFloat("velocityX",Mathf.Abs(_rb.velocity.x));
         _animator.SetFloat("velocityY",_rb.velocity.y);
     }
 }
