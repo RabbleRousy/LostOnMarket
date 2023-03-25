@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7796843427455364979}
   - component: {fileID: 7796843427455364988}
   - component: {fileID: 7796843427455364983}
+  - component: {fileID: 815335813}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -137,8 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b492b1863ee75604ab20f3d6e61f817b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  jumpForce: 7
+  speed: 5
+  jumpForce: 10
   lowJumpMultiplier: 3
   fallMultiplier: 1.5
   jumpable:
@@ -175,3 +176,16 @@ MonoBehaviour:
   m_DefaultActionMap: Default
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &815335813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7796843427455364989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 7796843427455364989}
