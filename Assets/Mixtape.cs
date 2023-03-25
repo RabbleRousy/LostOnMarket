@@ -15,11 +15,11 @@ public class Mixtape : MonoBehaviour
 
     private void Pickup()
     {
-        if (!traderData.isSpeakingGibberish) return;
+        if (!traderData.IsSpeakingGibberish) return;
         
         // TODO: fancy stuff, unlock animation etc.
         
-        traderData.isSpeakingGibberish = false;
+        traderData.IsSpeakingGibberish = false;
         gameObject.SetActive(false);
     }
 }
