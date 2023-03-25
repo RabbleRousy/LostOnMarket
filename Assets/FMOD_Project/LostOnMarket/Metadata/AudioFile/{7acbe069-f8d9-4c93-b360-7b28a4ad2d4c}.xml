@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7acbe069-f8d9-4c93-b360-7b28a4ad2d4c}">
+		<property name="assetPath">
+			<value>click_alien-072 (39).ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.400453514739229</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcb21e53-f438-4ec2-b01b-c40e617e0700}</destination>
+		</relationship>
+	</object>
+</objects>
