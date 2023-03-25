@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1670b5a8-7fe2-4d87-8786-e52dee16f46d}">
+		<property name="assetPath">
+			<value>dolphin alien  (16).ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0021995464852607</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dcb21e53-f438-4ec2-b01b-c40e617e0700}</destination>
+		</relationship>
+	</object>
+</objects>

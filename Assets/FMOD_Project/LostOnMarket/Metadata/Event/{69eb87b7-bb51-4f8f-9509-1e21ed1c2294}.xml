@@ -130,12 +130,14 @@
 		<property name="color">
 			<value>Purple</value>
 		</property>
+		<property name="volume">
+			<value>1</value>
+		</property>
 		<property name="looping">
 			<value>true</value>
 		</property>
 		<relationship name="modulators">
-			<destination>{6ead8e60-3524-4e81-9353-02f1f21787dd}</destination>
-			<destination>{fdfad4ee-09d8-46cb-9610-1810531da26b}</destination>
+			<destination>{8438637b-d7cb-4fab-b06c-69b618b7202d}</destination>
 		</relationship>
 		<relationship name="sounds">
 			<destination>{9dde9849-0346-4faa-bfe8-f8568c759c9b}</destination>
@@ -170,23 +172,12 @@
 			<value>2.60000014</value>
 		</property>
 	</object>
-	<object class="RandomizerModulator" id="{6ead8e60-3524-4e81-9353-02f1f21787dd}">
+	<object class="RandomizerModulator" id="{8438637b-d7cb-4fab-b06c-69b618b7202d}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>34.5</value>
-		</property>
-	</object>
-	<object class="ADSRModulator" id="{fdfad4ee-09d8-46cb-9610-1810531da26b}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>volume</value>
-		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
+			<value>8.5</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{9dde9849-0346-4faa-bfe8-f8568c759c9b}">
