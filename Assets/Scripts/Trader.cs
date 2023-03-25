@@ -26,7 +26,7 @@ public class Trader : MonoBehaviour
     {
         if (!col.CompareTag("Player")) return;
 
-        if (data.isSpeakingGibberish) return;
+        if (data.IsSpeakingGibberish) return;
         
         E.SetActive(true);
         col.GetComponent<Inventory>().currentTrader = this;

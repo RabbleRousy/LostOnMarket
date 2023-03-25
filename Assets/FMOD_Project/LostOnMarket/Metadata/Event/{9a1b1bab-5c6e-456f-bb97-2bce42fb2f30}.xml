@@ -5,7 +5,7 @@
 			<value>light_alien</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0e7cc5d9-bcc3-4ef9-ab82-274a653cfe51}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{621ac317-c0a1-4226-a03e-2b6feb674361}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{f6f28bc5-60ae-4bc0-8a12-c99228379015}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{99f3bbbc-ccc8-4c12-a68b-a3329f6f97fb}">
@@ -56,7 +59,14 @@
 			<destination>{73635d41-6422-4b57-b59d-fc5aa0429070}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{e67ac174-48b1-4979-9d3e-47a6771eabaa}" />
+	<object class="EventAutomatableProperties" id="{e67ac174-48b1-4979-9d3e-47a6771eabaa}">
+		<property name="isPersistent">
+			<value>true</value>
+		</property>
+		<property name="minimumDistance">
+			<value>1.20000005</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{87ec79b7-7dad-4032-aac3-58d9c5e55b03}" />
 	<object class="Timeline" id="{5599e5bb-cb64-495f-a4c1-1f822a99dfd8}">
 		<property name="isProxyEnabled">
@@ -93,6 +103,7 @@
 	<object class="MixerBusEffectChain" id="{a01745f5-3e6d-4e8f-b09c-ed89ed593732}">
 		<relationship name="effects">
 			<destination>{45181ecb-45ea-4cc5-a1b7-4515771b9cee}</destination>
+			<destination>{491d0bd1-bbb8-4868-b39f-55f5df855de3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f693559f-cd6f-44d2-a97d-9f9a043e0f10}" />
@@ -139,6 +150,20 @@
 	</object>
 	<object class="MixerBusFader" id="{57712398-9be9-4ee9-82ca-a6e3978338c9}" />
 	<object class="MixerBusFader" id="{45181ecb-45ea-4cc5-a1b7-4515771b9cee}" />
+	<object class="SpatialiserEffect" id="{491d0bd1-bbb8-4868-b39f-55f5df855de3}">
+		<property name="minimumDistance">
+			<value>1.20000005</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>4</value>
+		</property>
+		<property name="minimumExtent">
+			<value>58</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{775d0f82-8fb7-46d1-be29-16ed4061665b}">
 		<relationship name="audioFile">
 			<destination>{7612fe46-5435-4f6a-a2fe-1e9ece0f0e7e}</destination>
