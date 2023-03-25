@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 847517447
     locked: 0
+  - name: Plattform
+    uniqueID: 265234231
+    locked: 0
   - name: NPC
     uniqueID: 727172175
     locked: 0
