@@ -5,7 +5,7 @@
 			<value>dolphin_alien</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0e7cc5d9-bcc3-4ef9-ab82-274a653cfe51}</destination>
@@ -59,7 +59,11 @@
 			<destination>{73635d41-6422-4b57-b59d-fc5aa0429070}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{11be675d-0bcf-4630-bb7a-40ad553dd7d4}" />
+	<object class="EventAutomatableProperties" id="{11be675d-0bcf-4630-bb7a-40ad553dd7d4}">
+		<property name="maximumDistance">
+			<value>10</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{6542915d-4daa-45c5-8c52-7b2f33c83dba}" />
 	<object class="Timeline" id="{1c60c3b8-afbb-4c3a-af28-7cf266bfad95}">
 		<property name="isProxyEnabled">
@@ -96,6 +100,7 @@
 	<object class="MixerBusEffectChain" id="{90ae03ea-1126-4670-b166-37e89958511a}">
 		<relationship name="effects">
 			<destination>{53ef4f28-30d1-4d8b-bac7-21d52212a6d1}</destination>
+			<destination>{b1a1a0de-28f5-4197-a1ee-91febf13da2c}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d00b90f6-e2a0-4b7f-8516-2fae9dae1a30}" />
@@ -131,6 +136,14 @@
 	</object>
 	<object class="MixerBusFader" id="{568ffd97-50da-45d4-8824-caf9c08ce9d6}" />
 	<object class="MixerBusFader" id="{53ef4f28-30d1-4d8b-bac7-21d52212a6d1}" />
+	<object class="ProxyEffect" id="{b1a1a0de-28f5-4197-a1ee-91febf13da2c}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="preset">
+			<destination>{3b0581d7-b3dc-454c-a002-017fc86434ed}</destination>
+		</relationship>
+	</object>
 	<object class="RandomizerModulator" id="{d85e2293-9149-458e-8fdf-01e55ff8ea60}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
