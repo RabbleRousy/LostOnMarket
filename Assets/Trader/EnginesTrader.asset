@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d21d86aafa2df4ca9e51857fd33eae, type: 3}
+  m_Name: EnginesTrader
+  m_EditorClassIdentifier: 
+  gibberishSound:
+    Guid:
+      Data1: 1777043383
+      Data2: 1334819665
+      Data3: 555616661
+      Data4: -1809703699
+    Path: event:/heavy_alien
+  translatedSound:
+    Guid:
+      Data1: -1357925391
+      Data2: 1277290722
+      Data3: 1280367249
+      Data4: 1557151116
+    Path: event:/Translated1
+  itemForSale: Engines
