@@ -13,7 +13,6 @@ public class Trader : MonoBehaviour
 
     private void Start()
     {
-        data.IsSpeakingGibberish = true;
         _camera = GetComponentInChildren<CinemachineVirtualCamera>();
         data.OnSpeakingChanged += () =>
         {

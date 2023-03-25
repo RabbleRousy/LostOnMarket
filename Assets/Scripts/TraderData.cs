@@ -9,6 +9,7 @@ public class TraderData : ScriptableObject
     public EventReference gibberishSound;
     public EventReference translatedSound;
     public string itemForSale;
+    public string itemGibberish;
 
     public event Action OnSpeakingChanged;
 
