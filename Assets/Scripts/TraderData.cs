@@ -1,11 +1,24 @@
+using System;
 using FMODUnity;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "TraderData")]
 public class TraderData : ScriptableObject
 {
-    public bool isSpeakingGibberish = true;
+    private bool isSpeakingGibberish = true;
     public EventReference gibberishSound;
     public EventReference translatedSound;
     public string itemForSale;
+
+    public event Action OnSpeakingChanged;
+
+    public bool IsSpeakingGibberish
+    {
+        get => isSpeakingGibberish;
+        set
+        {
+            isSpeakingGibberish = value;
+            OnSpeakingChanged?.Invoke();
+        }
+    }
 }

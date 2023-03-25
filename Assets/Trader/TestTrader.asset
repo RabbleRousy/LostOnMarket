@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3d21d86aafa2df4ca9e51857fd33eae, type: 3}
   m_Name: TestTrader
   m_EditorClassIdentifier: 
-  isSpeakingGibberish: 1
   gibberishSound:
     Guid:
       Data1: 1777043383
       Data2: 1334819665
       Data3: 555616661
       Data4: -1809703699
-    Path: event:/Gibberish1
+    Path: event:/heavy_alien
   translatedSound:
     Guid:
-      Data1: -1357925391
-      Data2: 1277290722
-      Data3: 1280367249
-      Data4: 1557151116
-    Path: event:/Translated1
+      Data1: -1709499477
+      Data2: 1164926062
+      Data3: -836003909
+      Data4: 808450882
+    Path: event:/light_alien
   itemForSale: Scrap Metal

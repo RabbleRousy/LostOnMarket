@@ -6,33 +6,39 @@ using UnityEngine;
 
 public class PlaySound : MonoBehaviour
 {
-    [SerializeField] private float interval = 5;
     private TraderData traderData;
-    private StudioEventEmitter _emitter;
+    private StudioEventEmitter _emitterGibberish;
+    private StudioEventEmitter _emitterTranslated;
 
     private void Awake()
     {
-        _emitter = GetComponent<StudioEventEmitter>();
+        _emitterGibberish = GetComponents<StudioEventEmitter>()[0];
+        _emitterTranslated = GetComponents<StudioEventEmitter>()[1];
 
     }
 
     private void Start()
     {
         traderData = GetComponent<Trader>().data;
-        _emitter.EventReference = traderData.gibberishSound;
-        InvokeRepeating("Play",interval,interval);
-    }
+        _emitterGibberish.EventReference = traderData.gibberishSound;
+        _emitterTranslated.EventReference = traderData.translatedSound;
+        Play();
 
-    private void Update()
-    {
-        if (!traderData.isSpeakingGibberish)
-        {
-            _emitter.EventReference = traderData.translatedSound;
-        }
+        traderData.OnSpeakingChanged += Play;
+
     }
 
     private void Play()
     {
-        _emitter.Play();
+        if (traderData.IsSpeakingGibberish)
+        {
+            _emitterTranslated.Stop();
+            _emitterGibberish.Play();
+        }
+        else
+        {
+            _emitterGibberish.Stop();
+            _emitterTranslated.Play();
+        }
     }
 }
