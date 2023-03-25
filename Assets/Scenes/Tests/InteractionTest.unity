@@ -573,6 +573,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2d36c02e969843eb9399cf8b81b7e2f, type: 3}
+--- !u!114 &1488582004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1488582004, guid: b4083009009121340adcb8f1606b2081, type: 3}
+  m_PrefabInstance: {fileID: 2496992050136641724}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1501265219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,6 +736,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 815335827, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
+      propertyPath: notificationText
+      value: 
+      objectReference: {fileID: 1488582004}
     - target: {fileID: 815335827, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
       propertyPath: shoppingListItems.Array.data[0]
       value: 
