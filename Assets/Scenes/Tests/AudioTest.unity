@@ -232,7 +232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87042547}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.52, z: 0}
+  m_LocalPosition: {x: 0, y: -6.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3573,6 +3573,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1883799475 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1488582004, guid: b4083009009121340adcb8f1606b2081, type: 3}
+  m_PrefabInstance: {fileID: 1883799470}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1884828574
 GameObject:
   m_ObjectHideFlags: 0
@@ -3994,6 +4005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 815335827, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
+      propertyPath: notificationText
+      value: 
+      objectReference: {fileID: 1883799475}
     - target: {fileID: 815335827, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
       propertyPath: shoppingListItems.Array.data[0]
       value: 
