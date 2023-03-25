@@ -40,6 +40,7 @@ public class Inventory : MonoBehaviour
             tradersInScene[i].data = traderData[i];
             mixtapesInScene[i].traderData = traderData[i];
             currentInventory.Add(new ItemObject(traderData[i].itemForSale, 1, 0));
+            traderData[i].IsSpeakingGibberish = true;
         }
     }
     

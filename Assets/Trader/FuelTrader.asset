@@ -27,3 +27,4 @@ MonoBehaviour:
       Data4: 855607714
     Path: event:/Translated_Fuel
   itemForSale: Fuel Cells
+  itemGibberish: "\u229B\uA74F\u2127\u2180\u235D"
