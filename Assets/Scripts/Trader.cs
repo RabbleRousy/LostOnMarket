@@ -22,6 +22,11 @@ public class Trader : MonoBehaviour
         availableTraderData.RemoveAt(index);
     }
 
+    private void Start()
+    {
+        data.IsSpeakingGibberish = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (!col.CompareTag("Player")) return;
