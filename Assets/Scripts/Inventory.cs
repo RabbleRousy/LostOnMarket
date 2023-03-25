@@ -7,8 +7,8 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     [SerializeField] private List<ItemObject> currentInventory;
-    [SerializeField] private float interactionRange;
-    [SerializeField] private LayerMask traderMask;
+
+    public Trader currentTrader = null;
 
     public void Collect(string itemName)
     {
@@ -39,19 +39,9 @@ public class Inventory : MonoBehaviour
 
     public void OnInteract()
     {
-        Collider2D traderCollider = Physics2D.OverlapCircle(transform.position,interactionRange,traderMask);
-        if (traderCollider)
-        {
-            // TODO: Do other stuff
-            
-            
-            Collect(traderCollider.GetComponent<Trader>().data.itemForSale);
-        }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(transform.position, interactionRange);
+        if (!currentTrader) return;
+        
+        // TODO: Do other stuff
+        Collect(currentTrader.data.itemForSale);
     }
 }
