@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Mixtape : MonoBehaviour
 {
-    [SerializeField] private TraderData traderData;
+    public TraderData traderData;
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (!col.CompareTag("Player")) return;

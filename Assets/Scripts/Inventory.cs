@@ -3,22 +3,45 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = System.Random;
 
 public class Inventory : MonoBehaviour
 {
+    [SerializeField] private string traderDataFolder;
     [SerializeField] private List<ItemObject> currentInventory;
 
     public Trader currentTrader = null;
 
     [SerializeField] private Toggle[] shoppingListItems;
 
-    private void Start()
+    private void Awake()
     {
+        SetUpTradersAndMixtapes();
         SetUpShoppingList();
     }
 
+    private void SetUpTradersAndMixtapes()
+    {
+        // Get all candidates and shuffle them
+        Random random = new Random(Guid.NewGuid().GetHashCode());
+        var traderData = GetAllInstancesInFolder<TraderData>(traderDataFolder)
+            .ToList().OrderBy(item => random.Next()).ToArray();
+        var tradersInScene = FindObjectsOfType<Trader>()
+            .ToList().OrderBy(item => random.Next()).ToArray();
+        var mixtapesInScene = FindObjectsOfType<Mixtape>()
+            .ToList().OrderBy(item => random.Next()).ToArray();
+
+        for (int i = 0; i < 4; i++)
+        {
+            tradersInScene[i].data = traderData[i];
+            mixtapesInScene[i].traderData = traderData[i];
+            currentInventory.Add(new ItemObject(traderData[i].itemForSale, 1, 0));
+        }
+    }
+    
     private void SetUpShoppingList()
     {
         // TODO: Randomly pick some items that are needed
@@ -39,7 +62,8 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-            currentInventory.Add(new ItemObject(itemName));
+            // Currently unused
+            currentInventory.Add(new ItemObject(itemName, 0, 1));
         }
 
         CheckShoppingList();
@@ -75,5 +99,18 @@ public class Inventory : MonoBehaviour
         
         // TODO: Do other stuff
         Collect(currentTrader.data.itemForSale);
+    }
+    
+    private static T[] GetAllInstancesInFolder<T>(string folderPath) where T : ScriptableObject
+    {
+        string[] guids = AssetDatabase.FindAssets("t:"+ typeof(T).Name, new[] { folderPath }); 
+        T[] a = new T[guids.Length];
+        for(int i =0; i<guids.Length; i++)         //probably could get optimized 
+        {
+            string path = AssetDatabase.GUIDToAssetPath(guids[i]);
+            a[i] = AssetDatabase.LoadAssetAtPath<T>(path);
+        }
+ 
+        return a;
     }
 }

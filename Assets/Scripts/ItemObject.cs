@@ -11,10 +11,10 @@ public class  ItemObject
     public int requiredAmount;
     public int currentAmount;
 
-    public ItemObject(string name)
+    public ItemObject(string name, int reqAmount, int currAmount)
     {
         this.name = name;
-        requiredAmount = 0;
-        currentAmount = 1;
+        requiredAmount = reqAmount;
+        currentAmount = currAmount;
     }
 }
