@@ -448,6 +448,7 @@ GameObject:
   - component: {fileID: 815335813}
   - component: {fileID: 815335827}
   - component: {fileID: 5359463663314364534}
+  - component: {fileID: 1032244040195478522}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -488,8 +489,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: 0.43695095}
+  m_Size: {x: 1, y: 2.794376}
   m_Direction: 0
 --- !u!50 &7796843427455364979
 Rigidbody2D:
@@ -615,6 +616,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1032244040195478522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7796843427455364989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad5265c32b8b214cadadddf0f560c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7857591375576163641
 GameObject:
   m_ObjectHideFlags: 0

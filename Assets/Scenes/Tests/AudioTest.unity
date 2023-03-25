@@ -1509,11 +1509,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7796843427455364976, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
   m_PrefabInstance: {fileID: 2087345476}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &815335820 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 815335820, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
-  m_PrefabInstance: {fileID: 2087345476}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &879963984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +1974,7 @@ PlayableDirector:
   - key: {fileID: -6791717505169434176, guid: 658565616511ea84c8506f2513c61f4f, type: 2}
     value: {fileID: 1476865983}
   - key: {fileID: 5236209336589128125, guid: 658565616511ea84c8506f2513c61f4f, type: 2}
-    value: {fileID: 815335820}
+    value: {fileID: 1329896540}
   - key: {fileID: -106172641299370782, guid: 658565616511ea84c8506f2513c61f4f, type: 2}
     value: {fileID: 1960723263}
   - key: {fileID: -3315974207168777827, guid: 658565616511ea84c8506f2513c61f4f, type: 2}
@@ -2444,6 +2439,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1329896540 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5359463663314364534, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
+  m_PrefabInstance: {fileID: 2087345476}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1369791432
 GameObject:
   m_ObjectHideFlags: 0
