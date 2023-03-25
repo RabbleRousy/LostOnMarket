@@ -5,7 +5,7 @@
 			<value>Translated_Fuel</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0e7cc5d9-bcc3-4ef9-ab82-274a653cfe51}</destination>
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{1bc8fe41-5715-4e88-b6a8-7f020ac22949}">
+		<property name="volume">
+			<value>2.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{4eac3de8-8ac4-45ea-bac0-42ec43be34eb}</destination>
 		</relationship>
@@ -96,14 +99,10 @@
 	<object class="MixerBusEffectChain" id="{4eac3de8-8ac4-45ea-bac0-42ec43be34eb}">
 		<relationship name="effects">
 			<destination>{cc646a7f-9234-4d30-afab-5ebc50a7b469}</destination>
-			<destination>{673811c3-06ba-46e3-9b7c-4e16693b46d4}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{57a56c96-0f2f-48b2-bb60-a44fc0d6341d}" />
 	<object class="MultiSound" id="{282d984d-b4d4-4d4e-ba88-b869d08954af}">
-		<property name="looping">
-			<value>true</value>
-		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
@@ -114,14 +113,6 @@
 	</object>
 	<object class="MixerBusFader" id="{7be9e9a2-4afb-40c6-8eaa-59fd17159c4d}" />
 	<object class="MixerBusFader" id="{cc646a7f-9234-4d30-afab-5ebc50a7b469}" />
-	<object class="ProxyEffect" id="{673811c3-06ba-46e3-9b7c-4e16693b46d4}">
-		<property name="inputFormat">
-			<value>1</value>
-		</property>
-		<relationship name="preset">
-			<destination>{3b0581d7-b3dc-454c-a002-017fc86434ed}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{50f115a9-e5c6-4b5d-8444-bdae9b0d1b50}">
 		<relationship name="audioFile">
 			<destination>{d33c0baf-8b1e-47aa-a62f-008c9a5a5147}</destination>

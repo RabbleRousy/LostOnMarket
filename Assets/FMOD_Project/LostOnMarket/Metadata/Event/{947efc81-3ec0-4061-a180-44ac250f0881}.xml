@@ -5,7 +5,7 @@
 			<value>Translated_Circuit</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0e7cc5d9-bcc3-4ef9-ab82-274a653cfe51}</destination>
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{2ecce4be-ba0c-4169-aa8f-86d6c7dd821d}">
+		<property name="volume">
+			<value>2.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{64826305-88ca-4175-b419-606c07ce8533}</destination>
 		</relationship>
@@ -96,14 +99,10 @@
 	<object class="MixerBusEffectChain" id="{64826305-88ca-4175-b419-606c07ce8533}">
 		<relationship name="effects">
 			<destination>{d2e8ac15-7bb1-477e-a7d4-576d58e9d5e8}</destination>
-			<destination>{b144a051-39b5-41cc-b9f2-108c7ac1ad14}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8e8c8a4b-4316-4814-ad0b-228a92bf75bc}" />
 	<object class="MultiSound" id="{94b3591d-fb37-4914-a8da-b7469da4e826}">
-		<property name="looping">
-			<value>true</value>
-		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
@@ -114,14 +113,6 @@
 	</object>
 	<object class="MixerBusFader" id="{8618ef95-c775-46b7-b47c-3d46712d58eb}" />
 	<object class="MixerBusFader" id="{d2e8ac15-7bb1-477e-a7d4-576d58e9d5e8}" />
-	<object class="ProxyEffect" id="{b144a051-39b5-41cc-b9f2-108c7ac1ad14}">
-		<property name="inputFormat">
-			<value>1</value>
-		</property>
-		<relationship name="preset">
-			<destination>{3b0581d7-b3dc-454c-a002-017fc86434ed}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{cfec01fb-6b4e-4a54-b539-5d913d9c0407}">
 		<relationship name="audioFile">
 			<destination>{78211219-d283-49b1-a893-4e85400f6796}</destination>
