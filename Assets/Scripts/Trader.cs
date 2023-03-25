@@ -1,12 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
+using System.Collections;
+using Cinemachine;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class Trader : MonoBehaviour
 {
+    [SerializeField] private float highlightDuration = 3;
+    private CinemachineVirtualCamera _camera;
     public GameObject E;
 
     public TraderData data;
@@ -15,6 +14,11 @@ public class Trader : MonoBehaviour
     private void Start()
     {
         data.IsSpeakingGibberish = true;
+        _camera = GetComponentInChildren<CinemachineVirtualCamera>();
+        data.OnSpeakingChanged += () =>
+        {
+            StartCoroutine(Highlight());
+        };
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -33,5 +37,12 @@ public class Trader : MonoBehaviour
 
         E.SetActive(false);
         col.GetComponent<Inventory>().currentTrader = null;
+    }
+
+    private IEnumerator Highlight()
+    {
+        _camera.Priority = 100;
+        yield return new WaitForSeconds(highlightDuration);
+        _camera.Priority = 1;
     }
 }
