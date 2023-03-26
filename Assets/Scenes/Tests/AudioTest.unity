@@ -4063,6 +4063,10 @@ PrefabInstance:
       propertyPath: shoppingListItems.Array.data[3]
       value: 
       objectReference: {fileID: 2057872565}
+    - target: {fileID: 87775933228287788, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1032244040195478522, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
       propertyPath: m_Enabled
       value: 1
