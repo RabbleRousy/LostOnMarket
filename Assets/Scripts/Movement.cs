@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask jumpable;
     [SerializeField] private float speedMultiplier;
     [SerializeField] private StudioEventEmitter jumpEmitter;
+    [SerializeField] private ParticleSystem jumpEffect;
 
     private float inputDirection;
     private bool isJumping;
@@ -30,6 +31,7 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpEmitter.Play();
+            jumpEffect.Play();
         }
     }
 
