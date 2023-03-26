@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -13,6 +10,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float fallMultiplier;
     [SerializeField] private LayerMask jumpable;
     [SerializeField] private float speedMultiplier;
+    [SerializeField] private StudioEventEmitter jumpEmitter;
 
     private float inputDirection;
     private bool isJumping;
@@ -31,6 +29,7 @@ public class Movement : MonoBehaviour
         if (IsGrounded() && isJumping)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpEmitter.Play();
         }
     }
 
