@@ -4226,6 +4226,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4219630059325100856, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6200564853943040282, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8234711783604838760, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
       propertyPath: m_Name
       value: Trader 3
@@ -4235,12 +4243,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8234711783604838773, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234711783604838773, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234711783604838773, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8234711783604838773, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.79
+      value: -21.89
       objectReference: {fileID: 0}
     - target: {fileID: 8234711783604838773, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.57
+      value: 19.41
       objectReference: {fileID: 0}
     - target: {fileID: 8234711783604838773, guid: b78202594b0d6bf40bac312b1f0eb14f, type: 3}
       propertyPath: m_LocalPosition.z
