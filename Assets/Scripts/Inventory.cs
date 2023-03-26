@@ -5,6 +5,8 @@ using System.Linq;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 using UnityEngine.UI;
 using Random = System.Random;
 
@@ -17,6 +19,8 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] private Toggle[] shoppingListItems;
     [SerializeField] private TextMeshProUGUI notificationText;
+
+    [SerializeField] private PlayableDirector outro;
 
     private void Awake()
     {
@@ -126,5 +130,18 @@ public class Inventory : MonoBehaviour
         }
  
         return a;
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        int amount = 0;
+        foreach (ItemObject io in currentInventory)
+        {
+            amount += io.currentAmount;
+        }
+        if (col.gameObject.tag == "Ship" && amount >= 4)
+        {
+            outro.Play();
+        }
     }
 }

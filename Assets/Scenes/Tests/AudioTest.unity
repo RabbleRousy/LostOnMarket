@@ -2593,7 +2593,7 @@ GameObject:
   - component: {fileID: 1476865984}
   m_Layer: 3
   m_Name: SpaceShip
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4039,6 +4039,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 815335827, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
+      propertyPath: outro
+      value: 
+      objectReference: {fileID: 1476039531}
     - target: {fileID: 815335827, guid: 8369ef54c00e4f64ab06bc3645f2af50, type: 3}
       propertyPath: notificationText
       value: 
